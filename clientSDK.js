@@ -32,7 +32,7 @@ var onSuccess = function(data) {
                 document.getElementById("info").innerHTML = xhttp.responseText;
             }
         };
-        xhttp.open("GET", `https://www.omdbapi.com/?t=${q}&apikey=4f07baaf`, true);
+        xhttp.open("GET", `https://www.omdbapi.com/?apikey=4f07baaf&s=${q}`, true);
         xhttp.send();
     }
     console.log(data);
